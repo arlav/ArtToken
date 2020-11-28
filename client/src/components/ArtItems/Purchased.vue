@@ -1,13 +1,13 @@
 <template>
-	<div v-if="tokenURIs.length > 0" class="container">
-		<h2 class="title">My Art Purchases</h2>
+  <div v-if="tokenURIs.length > 0" class="container">
+    <h2 class="title">My Art Purchases</h2>
 
-		<div class="flex art-item-list">
-			<ul v-for="uri in tokenURIs" :key="uri">
-				<li><img class="art-item" :src="uri" alt="Art" /></li>
-			</ul>
-		</div>
-	</div>
+    <div class="flex art-item-list">
+      <ul v-for="uri in tokenURIs" :key="uri">
+        <li><img class="art-item" :src="uri" alt="Art" /></li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -49,7 +49,7 @@ export default {
 
 <style scoped>
 .container {
-	margin: 100px 0;
-	width: 100%;
+  margin: 100px 0;
+  width: 100%;
 }
 </style>

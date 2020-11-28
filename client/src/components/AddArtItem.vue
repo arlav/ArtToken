@@ -1,15 +1,15 @@
 <template>
-	<section class="add-art-item-container">
-		<input type="number" v-model="price" placeholder="Price" />
-		<label v-if="!artItem" class="add-art-item-label">
-			<input type="file" accept="image/*" @change="onArtSelection" />
-			Add Art
-		</label>
+  <section class="add-art-item-container">
+    <input type="number" v-model="price" placeholder="Price" />
+    <label v-if="!artItem" class="add-art-item-label">
+      <input type="file" accept="image/*" @change="onArtSelection" />
+      Add Art
+    </label>
 
-		<button v-else @click="addArtItem()">
-			Publish
-		</button>
-	</section>
+    <button v-else @click="addArtItem()">
+      Publish
+    </button>
+  </section>
 </template>
 
 <script>
@@ -56,23 +56,23 @@ export default {
 
 <style scoped>
 .add-art-item-container {
-	padding: 40px;
+  padding: 40px;
 }
 
 .add-art-item-container input {
-	padding: 10px;
+  padding: 10px;
 }
 
 .add-art-item-label {
-	background-color: #ee4540;
-	padding: 8px 12px;
-	cursor: pointer;
-	font-size: 1em;
-	font-weight: bold;
-	vertical-align: middle;
+  background-color: #ee4540;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  vertical-align: middle;
 }
 
 input[type="file"] {
-	display: none;
+  display: none;
 }
 </style>

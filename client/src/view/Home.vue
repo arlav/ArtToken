@@ -1,24 +1,24 @@
 <template>
-	<section class="flex home-container">
-		<h1 class="title">Buy Digital Art</h1>
+  <section class="flex home-container">
+    <h1 class="title">Buy Digital Art</h1>
 
-		<template class="flex" v-if="account">
-			<button v-if="!hasPayment" @click="checkPayments()">
-				Check for Payments
-			</button>
+    <template class="flex" v-if="account">
+      <button v-if="!hasPayment" @click="checkPayments()">
+        Check for Payments
+      </button>
 
-			<button class="withdraw-btn" v-else @click="withdrawPayments()">
-				Withdraw Payments
-			</button>
+      <button class="withdraw-btn" v-else @click="withdrawPayments()">
+        Withdraw Payments
+      </button>
 
-			<AddArtItem />
-			<ArtItems />
-		</template>
+      <AddArtItem />
+      <ArtItems />
+    </template>
 
-		<button v-else class="connect-btn" @click="connect()">
-			Connect to App
-		</button>
-	</section>
+    <button v-else class="connect-btn" @click="connect()">
+      Connect to App
+    </button>
+  </section>
 </template>
 
 <script>
@@ -70,22 +70,22 @@ export default {
 
 <style scoped>
 .home-container {
-	flex-direction: column;
-	align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
-	font-size: 5em;
-	margin: 0;
-	padding: 50px 0 20px 0;
-	font-family: "Fredoka One", sans-serif;
+  font-size: 5em;
+  margin: 0;
+  padding: 50px 0 20px 0;
+  font-family: "Fredoka One", sans-serif;
 }
 
 .connect-btn {
-	margin: 30px 0;
+  margin: 30px 0;
 }
 
 .withdraw-btn {
-	background-color: rgb(22, 128, 57);
+  background-color: rgb(22, 128, 57);
 }
 </style>
