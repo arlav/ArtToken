@@ -23,7 +23,6 @@ contract ArtToken is ERC721, Ownable, PullPayment {
     uint256 price;
     string tokenURI;
     bool exists;
-
   }
 
   constructor() ERC721("ArtToken", "ART") public {}
@@ -37,29 +36,27 @@ contract ArtToken is ERC721, Ownable, PullPayment {
     require(price > 0, "Price can not be 0");
     _artItemIds++;
     _artItems[_artItemIds] = ArtItem(msg.sender, price, tokenURI, true);
-
   }
+
 
   function getArtItem(uint256 id) public view artItemExist(id) returns(uint256,uint256, string memory){
     ArtItem memory artItem = _artItems[id];
     return (id, artItem.price, artItem.tokenURI);
   }
 
+
   function purchaseArtItem(uint256 artItemid) external payable artItemExist(artItemid) {
     ArtItem storage artItem = _artItems[artItemid];
-
     require(msg.value >= artItem.price, "Your bid is too low");
-
     _tokenIds++;
-
     _safeMint(msg.sender, _tokenIds);
     _setTokenURI(_tokenIds, artItem.tokenURI);
     _asyncTransfer(artItem.seller, msg.value);
   }
 
+
   function getPayments() external {
     withdrawPayments(msg.sender);
-
   }
 
 
