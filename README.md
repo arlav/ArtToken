@@ -35,9 +35,13 @@ use ganache localy, with 7545 port.
 **To Run the project:**
 
 1.Launch Ganache first- Add thfrom the Truffle-config.js from the project
+
 2.in a terminal navigqte to the /client directory and execute :$ npm run serve
+
 3.in a second terminal launch IPFS daemon:$ ipfs daemon
+
 4.on a browser with metamask navigate to http://localhost:3000
+
 5.have an image file ready to upload 
 
 
