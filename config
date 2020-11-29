@@ -1,0 +1,173 @@
+{
+  "API": {
+    "HTTPHeaders": {
+      "Access-Control-Allow-Methods": [
+        "PUT",
+        "GET",
+        "POST"
+      ],
+      "Access-Control-Allow-Origin": [
+        "*"
+      ]
+    }
+  },
+  "Addresses": {
+    "API": "/ip4/0.0.0.0/tcp/5001",
+    "Announce": [],
+    "Gateway": "/ip4/127.0.0.1/tcp/8080",
+    "NoAnnounce": [],
+    "Swarm": [
+      "/ip4/0.0.0.0/tcp/4001",
+      "/ip6/::/tcp/4001",
+      "/ip4/0.0.0.0/udp/4001/quic",
+      "/ip6/::/udp/4001/quic"
+    ]
+  },
+  "AutoNAT": {},
+  "Bootstrap": [
+    "/dnsaddr/bootstrap.libp2p.io/p2p/QmNnooDu7bfjPFoTZYxMNLWUQJyrVwtbZg5gBMjTezGAJN",
+    "/dnsaddr/bootstrap.libp2p.io/p2p/QmQCU2EcMqAqQPR2i9bChDtGNJchTbq5TbXJJ16u19uLTa",
+    "/dnsaddr/bootstrap.libp2p.io/p2p/QmbLHAnMoJPWSCR5Zhtx6BHJX9KiKNN6tpvbUcqanj75Nb",
+    "/dnsaddr/bootstrap.libp2p.io/p2p/QmcZf59bWwK5XFi76CZX8cbJ4BhTzzA3gU1ZjYZcYW3dwt",
+    "/ip4/104.131.131.82/tcp/4001/p2p/QmaCpDMGvV2BGHeYERUEnRQAwe3N8SzbUtfsmvsqQLuvuJ",
+    "/ip4/104.236.179.241/tcp/4001/p2p/QmSoLPppuBtQSGwKDZT2M73ULpjvfd3aZ6ha4oFGL1KrGM",
+    "/ip4/128.199.219.111/tcp/4001/p2p/QmSoLSafTMBsPKadTEgaXctDQVcqN88CNLHXMkTNwMKPnu",
+    "/ip4/104.236.76.40/tcp/4001/p2p/QmSoLV4Bbm51jM9C4gDYZQ9Cy3U6aXMJDAbzgu2fzaDs64",
+    "/ip4/178.62.158.247/tcp/4001/p2p/QmSoLer265NRgSp2LA3dPaeykiS1J6DifTC88f5uVQKNAd",
+    "/ip6/2604:a880:1:20::203:d001/tcp/4001/p2p/QmSoLPppuBtQSGwKDZT2M73ULpjvfd3aZ6ha4oFGL1KrGM",
+    "/ip6/2400:6180:0:d0::151:6001/tcp/4001/p2p/QmSoLSafTMBsPKadTEgaXctDQVcqN88CNLHXMkTNwMKPnu",
+    "/ip6/2604:a880:800:10::4a:5001/tcp/4001/p2p/QmSoLV4Bbm51jM9C4gDYZQ9Cy3U6aXMJDAbzgu2fzaDs64",
+    "/ip6/2a03:b0c0:0:1010::23:1001/tcp/4001/p2p/QmSoLer265NRgSp2LA3dPaeykiS1J6DifTC88f5uVQKNAd",
+    "/ip4/104.131.131.82/udp/4001/quic/p2p/QmaCpDMGvV2BGHeYERUEnRQAwe3N8SzbUtfsmvsqQLuvuJ"
+  ],
+  "Datastore": {
+    "BloomFilterSize": 0,
+    "GCPeriod": "1h",
+    "HashOnRead": false,
+    "Spec": {
+      "mounts": [
+        {
+          "child": {
+            "path": "blocks",
+            "shardFunc": "/repo/flatfs/shard/v1/next-to-last/2",
+            "sync": true,
+            "type": "flatfs"
+          },
+          "mountpoint": "/blocks",
+          "prefix": "flatfs.datastore",
+          "type": "measure"
+        },
+        {
+          "child": {
+            "compression": "none",
+            "path": "datastore",
+            "type": "levelds"
+          },
+          "mountpoint": "/",
+          "prefix": "leveldb.datastore",
+          "type": "measure"
+        }
+      ],
+      "type": "mount"
+    },
+    "StorageGCWatermark": 90,
+    "StorageMax": "10GB"
+  },
+  "Discovery": {
+    "MDNS": {
+      "Enabled": true,
+      "Interval": 10
+    }
+  },
+  "Experimental": {
+    "FilestoreEnabled": false,
+    "GraphsyncEnabled": false,
+    "Libp2pStreamMounting": false,
+    "P2pHttpProxy": false,
+    "ShardingEnabled": false,
+    "StrategicProviding": false,
+    "UrlstoreEnabled": false
+  },
+  "Gateway": {
+    "APICommands": [],
+    "HTTPHeaders": {
+      "Access-Control-Allow-Headers": [
+        "X-Requested-With",
+        "Range",
+        "User-Agent"
+      ],
+      "Access-Control-Allow-Methods": [
+        "GET",
+        "PUT",
+        "POST"
+      ],
+      "Access-Control-Allow-Origin": [
+        "http://localhost:3000",
+        "http://localhost:3001",
+        "http://localhost:3002",
+        "http://127.0.0.1:5001",
+        "http://webui.ipfs.io",
+        "http://ipfs.io",
+        "http://ipfs.io/ipfs"
+      ]
+    },
+    "NoDNSLink": false,
+    "NoFetch": false,
+    "PathPrefixes": [],
+    "PublicGateways": null,
+    "RootRedirect": "",
+    "Writable": false
+  },
+  "Identity": {
+    "PeerID": "QmZQkfhMbkP2uGJuuJpjsf6ibn49VeW94QpSUaFKT8ni7t",
+    "PrivKey": "CAASpwkwggSjAgEAAoIBAQCwWZEsDg4kTkVLa11qaakzW64ffZwp5b//1s4s3zs/Ib+cIdyZ7eNnraqANCCBrhMVE9Nwx1e6kx5w0uj7aYk0zcNvUg1stNZCb9bIpuRnEwXTPQp6INGjMXSreyUGWx0vMxUqFMhAGsrEbsFaSOU7CqGqZutLDh6CkOY8CwjSVKahQ3TOYcXOWjwJpHtHkNEvxyGGwfGt/6GSL9UvcbyqTgkr6mM524tB5L2SYLsOvsD4y1hp7BJL6Y6jix0UVz/jLCia52aPIa5s4lKoUFJElfzUScHZj2nK1kSULVKlNra2yRObIJGgg0YApnJ31SfiJ/pzoayeybsbGjmiNCOjAgMBAAECggEAYx9lFxMrZcLM9lB56IdNgL2miLLM5UvreL1flB9BqQGqNvNdkPQC31LhRECIiPu0ZCOJtJmHuSpacOZL6Izwf0qs8FR5kUGwMRW174DHXxx1KL/ltLHfw8/XmU+VhxYNuGsJGWcnC8lDcdgjPEE+/8nBBwvkc4KTKaaSkutM4ROepNQgR7mnhZI6gP02WgbU5Xk036cKQ3fsAcAt8V5xb/v4pJ9fsC51YqdED410QhsfNXQjc9TqipszqlwCs04YnYHCpDnzowRMq63/O4v6ZGN7JHIBhkikvEMse25cTlr+iCKk151RmkLE2bqG30V2xOpXjeOtAi1XmphVl7KhqQKBgQDd0/aerEA0JAkYXqW1qCo7fZKLlOOuemj+S16lxioYK4o3M1tM859L/6mxinF7deEuO7TkH0CnRfVzRnu5z1/NeGlKcUs8rfNmTTGLz2PARJfD+jtymh6tbbBl356wIiNLLl1Pv+HYBnuBoPzbgMou1H6W2tK83pp0POLcGxcWfQKBgQDLhB+GVTXt7sWHlHPwUaXnCc23X39qdLYS/h+rHbjKDe+3TvLPh/ven+mtSEUQBg+YAJtit21ggUZaTTJSmitW9IpBgZgM6D+4ZMc14FSyE5Plv/BCjlLIfc+2HaYsufC6j+W+UqMMBq1BbVYmQH165VUvaw7WlJ2YYvIjxR2cnwKBgGPl8yieFgPlPptU9HeMlghYksh9ctO+mM38j1FEnuxnn0Ugwbsz88c8CeXEnTqmaZRymxIo6Orr3I/fbBTPySs1UOWPg/x9siGeHfQCn7+UpGxDosYHlk0wGsKmJEbZ+N8AsFEb7s9ki/Zi07zekS7pz2CMh187OH+kc93/7TPZAoGAbD/zsLUkQVGOuaXp4Trcnr5lMJNYJ5y6t/F5kL/3aWnuRrd0iZSQEQNH/QaCzZobs0MnY2OjhwBcFm4XRT6BrPfXji5LXRovwnnASFTxV+L3+O2V8yDWwZPB5uFwYTvp4qHlls1Hsn7eqv1oJGKLG9Jd9CHiu5pDFSoUF5iiPosCgYEAlB8E/G/c407QCyxyMOFd2zj0d9Dpin8bguIPRfXALz339awIMBk8NXEDDX3EvenhQKWZqN0T2P/Or4LYBsqCuAWS5meHvB4e0DN6yextahvSs5GLxVJeL2s1u7lbTTtlTylE2Nl142OzfyDr47ivg7xHkS808HfrBt7M4MR2YaU="
+  },
+  "Ipns": {
+    "RecordLifetime": "",
+    "RepublishPeriod": "",
+    "ResolveCacheSize": 128
+  },
+  "Mounts": {
+    "FuseAllowOther": false,
+    "IPFS": "/ipfs",
+    "IPNS": "/ipns"
+  },
+  "Peering": {
+    "Peers": null
+  },
+  "Plugins": {
+    "Plugins": null
+  },
+  "Provider": {
+    "Strategy": ""
+  },
+  "Pubsub": {
+    "DisableSigning": false,
+    "Router": ""
+  },
+  "Reprovider": {
+    "Interval": "12h",
+    "Strategy": "all"
+  },
+  "Routing": {
+    "Type": "dht"
+  },
+  "Swarm": {
+    "AddrFilters": null,
+    "ConnMgr": {
+      "GracePeriod": "300s",
+      "HighWater": 300,
+      "LowWater": 50,
+      "Type": "basic"
+    },
+    "DisableBandwidthMetrics": false,
+    "DisableNatPortMap": false,
+    "EnableAutoRelay": true,
+    "EnableRelayHop": true,
+    "Transports": {
+      "Multiplexers": {},
+      "Network": {},
+      "Security": {}
+    }
+  }
+}
