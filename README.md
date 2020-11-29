@@ -1,5 +1,11 @@
 ARTTOKEN PROJECT v0.03
 
+todo:
+Finish commenting ArtToken
+Finish Test
+Migrate to opsten / Rinkeby
+update repository
+submit.
 
 License: MIT
 The project is an ERC721 Token marketplace, where artists can upload their digital art, tokenise it with ERC721 and sell it.
