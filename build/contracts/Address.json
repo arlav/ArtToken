@@ -6740,7 +6740,7 @@
   },
   "networks": {},
   "schemaVersion": "3.3.2",
-  "updatedAt": "2020-11-28T18:23:51.699Z",
+  "updatedAt": "2020-11-29T10:36:19.122Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "methods": {}
