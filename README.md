@@ -1,4 +1,8 @@
-The project is an ERC721 Token marketplace, where artists can upload thei digital art, tokenise it with ERC721 and sell it.
+ARTTOKEN PROJECT v0.03
+
+
+License: MIT
+The project is an ERC721 Token marketplace, where artists can upload their digital art, tokenise it with ERC721 and sell it.
 The frontend interface is based on vue.js while the decentralised storage of files uses IPFS
 It re-uses code from OpenZeppelin, specifically:
 
@@ -40,28 +44,5 @@ use ganache localy, with 7545 port.
 
 
 
-
-# client
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
+### to Customize the vue.js configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
