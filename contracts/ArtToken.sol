@@ -10,7 +10,15 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/payment/PullPayment.sol";
 
 
+
 contract ArtToken is ERC721, Ownable, PullPayment {
+
+ address owner;
+  bool public paused;
+
+  //constructor is called during contract deployment only
+  constructor() public {
+  owner = msg.sender; //owner of the contract is the sender
 
   uint256 public _tokenIds;
   uint256 public _artItemIds;
@@ -58,6 +66,30 @@ contract ArtToken is ERC721, Ownable, PullPayment {
   function getPayments() external {
     withdrawPayments(msg.sender);
   }
+
+//circuit breaker pattern below-
+function setPaused(bool _paused) public {
+        require(msg.sender ==owner, "you Are not the owner");
+        paused = _paused; //if the owner of the contract triggers it then it works, if not then no.
+        
+    }
+    
+    function sendMoney() public payable {
+        
+    }
+    
+    function withdrawAllMoney(address payable _to) public {
+        require(msg.sender == owner, "you are not the owner");  //if another account,other than the onwer,  tries to withdraw it will not work
+        require(!paused, "contract is paused");
+        _to.transfer(address(this).balance);
+        
+    }
+    //for some reason the destroy does not work-?
+    function destroySmartContract(address payable _to) public{
+        require(msg.sender == owner, "you are not the owner");
+        selfdestruct(_to);
+        
+    }
 
 
 
