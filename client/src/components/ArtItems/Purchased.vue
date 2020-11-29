@@ -1,6 +1,6 @@
 <template>
   <div v-if="tokenURIs.length > 0" class="container">
-    <h2 class="title">My Art Purchases</h2>
+    <h2 class="title">My Art Tokens</h2>
 
     <div class="flex art-item-list">
       <ul v-for="uri in tokenURIs" :key="uri">

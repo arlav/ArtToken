@@ -72,6 +72,6 @@ export default {
 
 .purchase-btn {
   margin-left: 10px;
-  background-color: rgb(22, 128, 57);
+  background-color: rgb(56, 128, 237);
 }
 </style>

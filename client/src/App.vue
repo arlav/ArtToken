@@ -15,7 +15,11 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Fredoka+One&display=swap");
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light"),
+   url(./fonts/Roboto-Light.ttf);
+}
 
 html {
   background-color: #0f0f0f;
@@ -34,7 +38,7 @@ button {
   border: none;
   font-size: 1em;
   font-weight: bold;
-  background-color: #ee4540;
+  background-color: #3875ED;
 }
 
 button:hover {
