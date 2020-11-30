@@ -1,11 +1,6 @@
 ARTTOKEN PROJECT v0.03
 
-todo:
-Finish commenting ArtToken
-Finish Test
-Migrate to opsten / Rinkeby
-update repository
-submit.
+
 
 License: MIT
 The project is an ERC721 Token marketplace, where artists can upload their digital art, tokenise it with ERC721 and sell it.
@@ -19,7 +14,7 @@ the Ownable contact to allow for ownership of the contract and a circuit breaker
 It has used the guide "NFT ERC721 Digital Art" by Bernard3000
 (https://github.com/bernhard3000/nft-digital-marketplace)
 
-The project has been developed on MacOS and work with it / rerplicate it you need to 
+The project has been developed on MacOS and to work with it / replicate it you need to 
 
 Install Truffle (https://www.trufflesuite.com/)
 Install Ganache (https://www.trufflesuite.com/ganache)
