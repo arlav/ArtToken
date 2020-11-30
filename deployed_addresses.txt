@@ -1,4 +1,4 @@
 Contract is published here:
 
-Ropsten
-Rinkeby
+Ropsten 0x5349c55C18CaaE12f14D6b0D34ADBf2A0E0Aca84
+Rinkeby 0xd8b934580fcE35a11B58C6D73aDeE468a2833fa8
