@@ -8,13 +8,13 @@ The frontend interface is based on vue.js while the decentralised storage of fil
 It re-uses code from OpenZeppelin, specifically:
 
 the ERC721 contract for the ERC721 and token implementation
-the PullPayment contract to bypass the re-ntrance security issue
-the Ownable contact to allow for ownership of the contract and a circuit breaker pattern implementation.
+the PullPayment contract to bypass the re-entrance security issue
+the ownable contact to allow for ownership of the contract and a circuit breaker pattern implementation.
 
 It has used the guide "NFT ERC721 Digital Art" by Bernard3000
 (https://github.com/bernhard3000/nft-digital-marketplace)
 
-The project has been developed on MacOS and to work with it / replicate it you need to 
+The project has been developed on MacOS and to work with it / replicate it you need to
 
 Install Truffle (https://www.trufflesuite.com/)
 Install Ganache (https://www.trufflesuite.com/ganache)
@@ -23,15 +23,15 @@ Install Vue.js (npm install -g @vue/cli@latest)
 Install Ether.js ( npm install --save ethers)
 Install IPFS (npm install --save ipfs-http-client)
 
-You will also need a browser that runs metamask and for metamask to be properly set up.
+You will also need a browser that runs Metamask and for Metamask to be properly set up.
 
 You will also need to set particular configurations on your IPFS config file to allow vue.js to access it.
-A copy of the config file has been included in the project. Use that if you get a cross-oigins request 
+A copy of the config file has been included in the project. Use that if you get a cross-oigins request
 wheen you try to publih the art(your IPFS config lives in ~/.ipfs/comnfig). Alternatively use another address for IPFS (for example 0.0.0.0)
 
 **TRUFFLE CONFIGURATION**
-use solidity 0.6.2 
-use ganache localy, with 7545 port. 
+use solidity 0.6.2
+use ganache localy, with 7545 port.
 
 **To Run the project:**
 
@@ -43,7 +43,7 @@ use ganache localy, with 7545 port.
 
 4.on a browser with metamask navigate to http://localhost:3000
 
-5.have an image file ready to upload 
+5.have an image file ready to upload
 
 
 
