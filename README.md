@@ -1,15 +1,15 @@
-ARTTOKEN PROJECT v0.03
+ART TOKEN PROJECT v0.03
 
 
 
 License: MIT
 The project is an ERC721 Token marketplace, where artists can upload their digital art, tokenise it with ERC721 and sell it.
-The frontend interface is based on vue.js while the decentralised storage of files uses IPFS
+The front-end interface is based on vue.js while the decentralised storage of files uses IPFS
 It re-uses code from OpenZeppelin, specifically:
 
-the ERC721 contract for the ERC721 and token implementation
-the PullPayment contract to bypass the re-entrance security issue
-the ownable contact to allow for ownership of the contract and a circuit breaker pattern implementation.
+the ERC721 contract for the ERC721 and token implementation (0.6.2)
+the PullPayment contract to bypass the re-entrance security issue 
+the Ownable contract to allow for ownership of the contract and a circuit breaker pattern implementation.
 
 It has used the guide "NFT ERC721 Digital Art" by Bernard3000
 (https://github.com/bernhard3000/nft-digital-marketplace)
@@ -35,11 +35,11 @@ use ganache localy, with 7545 port.
 
 **To Run the project:**
 
-1.Launch Ganache first- Add thfrom the Truffle-config.js from the project
+1.Launch Ganache first- Add  the Truffle-config.js from the project
 
-2.in a terminal navigqte to the /client directory and execute :$ npm run serve
+2.in a terminal navigate to the /client directory and execute :$ npm run serve
 
-3.in a second terminal launch IPFS daemon:$ ipfs daemon
+3.in a second terminal launch IPFS daemon:$ ipfs daemon or launch your IPFS desktop
 
 4.on a browser with metamask navigate to http://localhost:3000
 
