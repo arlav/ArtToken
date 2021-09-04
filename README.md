@@ -23,11 +23,11 @@ Install Vue.js (npm install -g @vue/cli@latest)
 Install Ether.js ( npm install --save ethers)
 Install IPFS (npm install --save ipfs-http-client)
 
-You will also need a browser that runs Metamask and for Metamask to be properly set up.
+You will also need a browser that runs Metamask.io and for Metamask.io to be properly set up and connected to the network where the project is launched.
 
 You will also need to set particular configurations on your IPFS config file to allow vue.js to access it.
-A copy of the config file has been included in the project. Use that if you get a cross-oigins request
-wheen you try to publih the art(your IPFS config lives in ~/.ipfs/comnfig). Alternatively use another address for IPFS (for example 0.0.0.0)
+A copy of the config file has been included in the project. Use that if you get a cross-origins request
+when you try to publih the art (your IPFS config lives in ~/.ipfs/comnfig). Alternatively use another address for IPFS (for example 0.0.0.0)
 
 **TRUFFLE CONFIGURATION**
 use solidity 0.6.2
